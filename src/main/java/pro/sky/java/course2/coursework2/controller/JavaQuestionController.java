@@ -1,15 +1,14 @@
 package pro.sky.java.course2.coursework2.controller;
-
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import pro.sky.java.course2.coursework2.Question;
 import pro.sky.java.course2.coursework2.service.QuestionService;
 
 import java.util.Collection;
 
-@Controller
+@RestController
 @RequestMapping("/exam/java")
 public class JavaQuestionController {
     private final QuestionService questionService;
